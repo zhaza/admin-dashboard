@@ -146,40 +146,41 @@ img[src*="lego"] {
     grid-area: header;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 5em 4em;
+    grid-template-rows: 3em 5em;
     grid-template-areas: 
     "search user"
     "header-logo actions";
     background-color: #fff;
     padding-left: .5em;
     box-shadow: 0 5px 5px rgba(123, 123, 123, 0.506);
-    line-height: 0;
 }
 .header .search {
     grid-area: search;
 }
 .header .user {
     grid-area: user;
+    display: grid;
+    grid-auto-flow: column;
 }
-.user img {
-    border: #fff 1px solid;
+.header .user img[src$="jpg"] {
+    border: black 1px solid;
     border-radius: 50%;
+    height: 2em;
 }
-.header .header-logo {
+.header-logo {
     grid-area: header-logo;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4fr;
+    /* grid-template-rows: 1fr; */
 }
 .header-logo img {
-    grid-column: 1;
     border: #fff 1px solid;
     border-radius: 50%;
+    border: black 1px solid;
+    height: 4em;
 }
-.header-logo p, .header-logo h1 {
-    grid-column: 2;
-}
+
 .header .actions {
     grid-area: actions;
 

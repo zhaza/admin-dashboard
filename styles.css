@@ -101,6 +101,7 @@ img[src*="lego"] {
     justify-self: start;
     align-self: center;
     color: #fff;
+    font-size: 1.5em;
 }
 .sidebar .tabs {
     display: grid;
@@ -111,14 +112,15 @@ img[src*="lego"] {
 }
 .tabs a {
     justify-self: center;
-    margin-left: 7px;
+    margin-right: 5px;
     padding-top: 3px;
 }
 .tabs h1 {
     justify-self: start;
     align-self: center;
-    margin-left: calc(1em + 4px);
+    margin-left: .25em;
     color: #fff;
+    font-size: 1.2em;
 }
 .sidebar .system {
     display: grid;
@@ -129,14 +131,15 @@ img[src*="lego"] {
 }
 .system a {
     justify-self: center;
-    margin-left: 7px;
+    margin-right: 5px;
     padding-top: 3px;
 }
 .system button h1 {
     justify-self: start;
     align-self: center;
-    margin-left: calc(1em + 4px);
+    margin-left: .25em;
     color: #fff;
+    font-size: 1.2em;
 }
 
 .header {

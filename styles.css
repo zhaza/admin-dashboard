@@ -152,6 +152,7 @@ img[src*="lego"] {
     "header-logo actions";
     background-color: #fff;
     padding-left: 2em;
+    padding-right: 2em;
     padding-top: 1em;
     box-shadow: 0 5px 5px rgba(123, 123, 123, 0.506);
 }
@@ -282,6 +283,11 @@ img[src*="lego"] {
     display: grid;
     grid-template-rows: 2em repeat(auto-fit, minmax(50px, max-content));
 }
+.trend-card-slot {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 4fr;
+}
 .right-card {
     background-color: #fff;
     box-shadow: 0 5px 5px rgba(123, 123, 123, 0.506);
@@ -290,8 +296,10 @@ img[src*="lego"] {
     border-radius: 5%;
 }
 .right-card h4 {
+    padding-top: .5em;
     font-size: small;
 }
 .right-card p {
     font-size: x-small;
+    margin-bottom: 1.5em;
 }
